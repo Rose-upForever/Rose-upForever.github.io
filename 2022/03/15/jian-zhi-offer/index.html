@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java学习, Rose-upForever">
-    <meta name="description" content="1、DAO模式和接口①接口的作用Java中的接口类只是一个外表，接口的实现类才是真正的声明接口时如何工作的。当一个接口被实现之后，该接口实现类就是一个普通的类，就可以被创建和使用。
-② dao模式Java中的模式：Java中的模式是指在面向">
+    <meta name="keywords" content="剑指offer, Rose-upForever">
+    <meta name="description" content="1、简单类型① 数组中中的重复数字描述：
+在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java学习 | Rose-upForever</title>
+    <title>剑指offer | Rose-upForever</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java学习</h1>
+                    <h1 class="description center-align post-title">剑指offer</h1>
                 </div>
             </div>
         </div>
@@ -434,23 +434,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java-%E5%AD%A6%E4%B9%A0/">
-                                <span class="chip bg-color">Java 学习</span>
+                            <a href="/tags/%E5%88%B7%E9%A2%98/">
+                                <span class="chip bg-color">刷题</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Java%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                Java学习
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -473,14 +464,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.9k
+                    265
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    6 Min
+                    1 Min
                 </div>
                 
 
@@ -503,74 +494,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1、DAO模式和接口"><a href="#1、DAO模式和接口" class="headerlink" title="1、DAO模式和接口"></a>1、DAO模式和接口</h1><h2 id="①接口的作用"><a href="#①接口的作用" class="headerlink" title="①接口的作用"></a>①接口的作用</h2><p>Java中的接口类只是一个外表，接口的实现类才是真正的声明接口时如何工作的。当一个接口被实现之后，该接口实现类就是一个普通的类，就可以被创建和使用。</p>
-<h2 id="②-dao模式"><a href="#②-dao模式" class="headerlink" title="② dao模式"></a>② dao模式</h2><p>Java中的模式：Java中的模式是指在面向对象的设计过程中用于解决特定问题的套路</p>
-<p>dao（Data Access Objects数据存取对象）模式是指位于业务逻辑和持久化数据之间对持久化数据的访问，通俗的来讲就是将对数据库的各种操作封装起来</p>
-<p>DAO模式的优势：</p>
-<ol>
-<li><p>隔离了数据访问代码和业务逻辑实现代码。当业务需要使用数据的时候，只需要调用DAO方法即可，完全感觉不到数据库的存在。分工明确。数据访问层的代码不会影响业务逻辑代码的实现，这符合单一职能的原则，降低了耦合性，提高了可复用性。</p>
-</li>
-<li><p>采用了面向接口的编程，隔离了不同数据库的实现，如果底层的数据库发生变化，如有Mysql变为Oracle只要增加新的DAO接口的实现类即可。原有的Mysql的DAO接口实现类可以不用更改。降低了代码的耦合性同时提高了代码扩展性和系统的可移植性</p>
-</li>
-</ol>
-<p>DAO模式的组成</p>
-<ul>
-<li>1、DAO接口：DAO接口中将所有对数据库的操作定义为抽象的方法。</li>
-<li>2、DAO接口实现类：针对不同的数据库给出DAO接口定义方法的具体实现。</li>
-<li>3、实体类：用于存放与传输对象数据。</li>
-<li>4、数据库连接和关闭的工具类：避免数据库连接和关闭代码的重复使用，方便修改。</li>
-</ul>
-<h1 id="2、事务"><a href="#2、事务" class="headerlink" title="2、事务"></a>2、事务</h1><h2 id="1-事务的定义"><a href="#1-事务的定义" class="headerlink" title="(1) 事务的定义"></a>(1) 事务的定义</h2><p>事务(Transaction)，事务一般是指将要做的事情。在计算机术语中是指访问数据库并可能更新各个数据项的一个程序执行单元(unit).事务通常由操纵语言或编程语言书写的用户程序的执行所引起。</p>
-<h1 id="3、-MVC设计模式"><a href="#3、-MVC设计模式" class="headerlink" title="3、 MVC设计模式"></a>3、 MVC设计模式</h1><p>1）MVC设计模式分为视图(view)、模型(model)和控制器(controller)</p>
-<p><img src="C:\Users\lenovo\Desktop\Spring\Spring-notes\img\7.png"></p>
-<p>①视图</p>
-<p>视图主要是为了与用户进行交互，所使用到的主要使CSS/HTML等前端技术</p>
-<p>②模型</p>
-<p>模型主要是为了各个功能的实现</p>
-<p>③控制器</p>
-<p>控制器负责将视图和模型一一对应起来。相当于一个模型分发器。所谓的分发就是：1、接受请求，并将该请求跳转（转发、重定向）到模型进行处理。2、模型处理完成之后，再通过控制器，返回给视图中的请求处。</p>
-<h1 id="4、Java中的集合"><a href="#4、Java中的集合" class="headerlink" title="4、Java中的集合"></a>4、Java中的集合</h1><p>Java中使用集合是为了可以处理一组相似的数据。</p>
-<p>在Java中，如果一个对象内部可以持有若干其他对象，并且对外提供访问接口，我们就可以把这种对象成为集合。</p>
-<p>集合类主要以下三种</p>
-<ul>
-<li>List 一种有序的列表的集合</li>
-<li>Set 一种没有重复元素的集合</li>
-<li>Map 一种通过键值查找的映射表集合</li>
-</ul>
-<h2 id="1-、-HashMap"><a href="#1-、-HashMap" class="headerlink" title="1)、 HashMap"></a>1)、 HashMap</h2><p>HashMap的底层数据结构是哈希表。</p>
-<p>HashMap是线程安全的。</p>
-<ul>
-<li>线程安全：在Java中，并发是由多线程实现的，在jvm中，各个线程之间互不相干，为了尽可能的提高程序性能，jvm就使用多线程。</li>
-<li>随着多线程的出现，也就出现了线程安全问题，所谓的线程安全问题最典型的就是死锁和脏数据。简单来说，线程安全问题就是在多线程的环境之中，永远保证程序的正确性。</li>
-</ul>
-<h3 id="1-、HashMap的数据结构："><a href="#1-、HashMap的数据结构：" class="headerlink" title="(1)、HashMap的数据结构："></a>(1)、HashMap的数据结构：</h3><p>HashMap是一个多维数组和多个单向链表的集合体。</p>
-<h3 id="2-、HashMap的存取原理—-调用map-put-k-v-方法"><a href="#2-、HashMap的存取原理—-调用map-put-k-v-方法" class="headerlink" title="(2) 、HashMap的存取原理—-调用map.put(k,v)方法"></a>(2) 、HashMap的存取原理—-调用map.put(k,v)方法</h3><ul>
-<li>先将(k,v),封装成Node节点对象</li>
-<li>底层调用Hash Code方法，计算出k的int型Hash值</li>
-<li>拿到k的哈希值，通过哈希算法，将其转换成数组的下标。</li>
-<li>拿到下标后，如果数组下标位置上没有链表，就把Node对象添加到这个位置上。<br>如果下标处有链表，此时会拿着Node对象的k和链表中的每一个节点的key，用equals()方法进行比对，如果发现key有相同的，直接用Node对象的v覆盖掉原来旧的value。如果比完了该链表，发现没有key相同的节点，直接存储在该链表的末尾位置。</li>
-</ul>
-<h1 id="5、Rest和Restful风格"><a href="#5、Rest和Restful风格" class="headerlink" title="5、Rest和Restful风格"></a>5、Rest和Restful风格</h1><p>Rest(Representational  State Transfer) 表述性状态转移：Rest的本质是通过URL(统一资源定位器)来访问资源的一种方式。Rest是面向资源的，服务端将内部资源发布为Rest服务，客户端通过URL使用HTTP协议访问他们</p>
-<p>*** Rest原则***</p>
-<ul>
-<li>网络上所有的事务都被抽象为资源</li>
-<li>每个资源都有唯一的URL(资源标识符)</li>
-<li>同一资源具有多种表现形式，通常使用的json形式，通过URL获取到Json形式的资源之后，再通过前端进行渲染。</li>
-<li>对资源的各种操作不会改变资源标识符</li>
-<li>所有的操作都是无状态的</li>
-</ul>
-<p>*** Restful***</p>
-<p>Restful是遵守了Rest原则的web服务。Restful其实就是Rest式的应用。restful其实是由rest派生出来的。</p>
-<p><img src="C:\Users\lenovo\Desktop\Markdown-image\Java-image\2022-02-28_233603.png"></p>
-<p>wrapper概念，动态SQL。json数据格式, @ConrollerAdvice 注解</p>
-<h1 id="6、映射"><a href="#6、映射" class="headerlink" title="6、映射"></a>6、映射</h1><h2 id="01、映射的概念"><a href="#01、映射的概念" class="headerlink" title="01、映射的概念"></a>01、映射的概念</h2><p>在Java中除了int等基本类型之外，其他的类型全部是class，为了获取该种类型（class）的全部信息，JVM在读取到一种class类型的时候就会将其加载近内存，并且JVM会创建一个对应的class实例来获取class类的全部信息。这种获取某一class类型信息的方式就被成为映射。</p>
-<p>例如：在加载String类的时候，JVM会将String.class 文件加载进内存，然后为String类创建一个实例，并将该实例和String关联起来。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Class cls = new Class(String);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>JVM所持有的每一个实例对象实际上就是指向一个数据类型。</p>
-<h1 id="7、Java虚拟机-JVM"><a href="#7、Java虚拟机-JVM" class="headerlink" title="7、Java虚拟机(JVM)"></a>7、Java虚拟机(JVM)</h1><h1 id="8、泛型"><a href="#8、泛型" class="headerlink" title="8、泛型"></a>8、泛型</h1><h2 id="1-、什么是泛型"><a href="#1-、什么是泛型" class="headerlink" title="1)、什么是泛型"></a>1)、什么是泛型</h2><p>在使用ArrayList的时候，为了保证对数据的存入和取出不出错，为每一种类声明一种ArrayList，但是由于java中的class太多，为了简化开发，就可以使用泛型。所谓的泛型就是定义一种模板，例如ArrayList<t>,其中T可以是任何一种class。然后再代码中为使用到的类创建对应的ArrayList&lt;类型&gt;</t></p>
-<p>使用泛型的好处是不必对类型进行强制转换，它同各国编译器对类型进行检查</p>
-<h2 id="2）java中泛型的特点"><a href="#2）java中泛型的特点" class="headerlink" title="2）java中泛型的特点"></a>2）java中泛型的特点</h2><p>在java中泛型的实现方法是由擦拭法实现的。所谓的擦拭法是指虚拟机对泛型一无所知，所有的工作全部是由编译器做的。对于同一个泛型类，编译器看到的代码中的数据类型是<em><strong>T</strong></em>,而虚拟机看到的代码中的数据类型为Object。Java的泛型是由编译器在编译的时候实行的，编译器内部永远把泛型<em><strong>T</strong></em>视为Object进行处理，在需要转型的时候，编译器会根据T的类型自动为我们实现安全的强制转型。</p>
+                <h1 id="1、简单类型"><a href="#1、简单类型" class="headerlink" title="1、简单类型"></a>1、简单类型</h1><h2 id="①-数组中中的重复数字"><a href="#①-数组中中的重复数字" class="headerlink" title="① 数组中中的重复数字"></a>① 数组中中的重复数字</h2><p>描述：</p>
+<p>在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组[2,3,1,0,2,5,3]，那么对应的输出是2或者3。存在不合法的输入的话输出-1</p>
+<p>题解：<br>可以使用集合类中的Set集合，因为Set中不允许包含重复的元素，所以我们可以调用Set的add方法，如果该方法的返回值为false，也就是无法将当前数据加入到到Set集合当中，我们就可以认为该数据存在重复的数据</p>
+<p>也可以事先将该数组进行排序，通过检查相邻数据之间是否相等，我们就可以判断是否存在重复的数据。</p>
 
                 
             </div>
@@ -597,7 +524,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://rose-upforever.github.io/2022/03/15/java-xue-xi/">https://rose-upforever.github.io/2022/03/15/java-xue-xi/</a>
+                    <a href="https://rose-upforever.github.io/2022/03/15/jian-zhi-offer/">https://rose-upforever.github.io/2022/03/15/jian-zhi-offer/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -635,8 +562,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java-%E5%AD%A6%E4%B9%A0/">
-                                    <span class="chip bg-color">Java 学习</span>
+                                <a href="/tags/%E5%88%B7%E9%A2%98/">
+                                    <span class="chip bg-color">刷题</span>
                                 </a>
                             
                         </div>
@@ -950,9 +877,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/03/15/jian-zhi-offer/">
                     <div class="card-image">
@@ -970,9 +898,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -981,6 +909,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -999,13 +928,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/14/di-er-pian-bo-ke/">
+                <a href="/2022/03/15/java-xue-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="第二篇博客">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Java学习">
                         
-                        <span class="card-title">第二篇博客</span>
+                        <span class="card-title">Java学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1016,14 +945,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%B5%84%E6%BA%90%E6%94%B6%E8%97%8F/" class="post-category">
-                                    资源收藏
+                            <a href="/categories/Java%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    Java学习
                                 </a>
                             
                             
@@ -1033,16 +962,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/Github/">
-                        <span class="chip bg-color">Github</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/Java-%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">Java 学习</span>
                     </a>
                     
                 </div>

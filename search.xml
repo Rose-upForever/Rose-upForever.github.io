@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title>项文爽</title>
-      <link href="/2022/03/15/xiang-wen-shuang/"/>
-      <url>/2022/03/15/xiang-wen-shuang/</url>
+      <title>剑指offer</title>
+      <link href="/2022/03/15/jian-zhi-offer/"/>
+      <url>/2022/03/15/jian-zhi-offer/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="1、简单类型"><a href="#1、简单类型" class="headerlink" title="1、简单类型"></a>1、简单类型</h1><h2 id="①-数组中中的重复数字"><a href="#①-数组中中的重复数字" class="headerlink" title="① 数组中中的重复数字"></a>① 数组中中的重复数字</h2><p>描述：</p><p>在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组[2,3,1,0,2,5,3]，那么对应的输出是2或者3。存在不合法的输入的话输出-1</p><p>题解：<br>可以使用集合类中的Set集合，因为Set中不允许包含重复的元素，所以我们可以调用Set的add方法，如果该方法的返回值为false，也就是无法将当前数据加入到到Set集合当中，我们就可以认为该数据存在重复的数据</p><p>也可以事先将该数组进行排序，通过检查相邻数据之间是否相等，我们就可以判断是否存在重复的数据。</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
       
     </entry>
     
