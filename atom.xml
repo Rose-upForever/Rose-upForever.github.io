@@ -6,7 +6,7 @@
   <link href="https://rose-upforever.github.io/atom.xml" rel="self"/>
   
   <link href="https://rose-upforever.github.io/"/>
-  <updated>2022-03-15T03:48:56.387Z</updated>
+  <updated>2022-03-15T08:36:05.444Z</updated>
   <id>https://rose-upforever.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java学习</title>
+    <link href="https://rose-upforever.github.io/2022/03/15/java-xue-xi/"/>
+    <id>https://rose-upforever.github.io/2022/03/15/java-xue-xi/</id>
+    <published>2022-03-15T08:33:14.000Z</published>
+    <updated>2022-03-15T08:36:05.444Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、DAO模式和接口&quot;&gt;&lt;a href=&quot;#1、DAO模式和接口&quot; class=&quot;headerlink&quot; title=&quot;1、DAO模式和接口&quot;&gt;&lt;/a&gt;1、DAO模式和接口&lt;/h1&gt;&lt;h2 id=&quot;①接口的作用&quot;&gt;&lt;a href=&quot;#①接口的作用&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java学习" scheme="https://rose-upforever.github.io/categories/Java%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Java 学习" scheme="https://rose-upforever.github.io/tags/Java-%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>第二篇博客</title>
