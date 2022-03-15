@@ -3,11 +3,11 @@
   <title>Rose-upForever</title>
   
   
-  <link href="https://rose-upforever.github.io/atom.xml" rel="self"/>
+  <link href="https://github.com/Rose-upForever/Rose-upForever.github.io/atom.xml" rel="self"/>
   
-  <link href="https://rose-upforever.github.io/"/>
+  <link href="https://github.com/Rose-upForever/Rose-upForever.github.io/"/>
   <updated>2022-03-15T03:48:56.387Z</updated>
-  <id>https://rose-upforever.github.io/</id>
+  <id>https://github.com/Rose-upForever/Rose-upForever.github.io/</id>
   
   <author>
     <name>rose</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>第二篇博客</title>
-    <link href="https://rose-upforever.github.io/2022/03/14/di-er-pian-bo-ke/"/>
-    <id>https://rose-upforever.github.io/2022/03/14/di-er-pian-bo-ke/</id>
+    <link href="https://github.com/Rose-upForever/Rose-upForever.github.io/2022/03/14/di-er-pian-bo-ke/"/>
+    <id>https://github.com/Rose-upForever/Rose-upForever.github.io/2022/03/14/di-er-pian-bo-ke/</id>
     <published>2022-03-14T09:50:12.000Z</published>
     <updated>2022-03-15T03:48:56.387Z</updated>
     
@@ -34,21 +34,21 @@
     
     
     
-    <category term="资源收藏" scheme="https://rose-upforever.github.io/categories/%E8%B5%84%E6%BA%90%E6%94%B6%E8%97%8F/"/>
+    <category term="资源收藏" scheme="https://github.com/Rose-upForever/Rose-upForever.github.io/categories/%E8%B5%84%E6%BA%90%E6%94%B6%E8%97%8F/"/>
     
     
-    <category term="Hexo" scheme="https://rose-upforever.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://github.com/Rose-upForever/Rose-upForever.github.io/tags/Hexo/"/>
     
-    <category term="Github" scheme="https://rose-upforever.github.io/tags/Github/"/>
+    <category term="Github" scheme="https://github.com/Rose-upForever/Rose-upForever.github.io/tags/Github/"/>
     
-    <category term="博客" scheme="https://rose-upforever.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="博客" scheme="https://github.com/Rose-upForever/Rose-upForever.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>我的第一篇博客</title>
-    <link href="https://rose-upforever.github.io/2022/03/14/wo-de-di-yi-pian-bo-ke/"/>
-    <id>https://rose-upforever.github.io/2022/03/14/wo-de-di-yi-pian-bo-ke/</id>
+    <link href="https://github.com/Rose-upForever/Rose-upForever.github.io/2022/03/14/wo-de-di-yi-pian-bo-ke/"/>
+    <id>https://github.com/Rose-upForever/Rose-upForever.github.io/2022/03/14/wo-de-di-yi-pian-bo-ke/</id>
     <published>2022-03-14T09:38:22.000Z</published>
     <updated>2022-03-14T09:38:22.018Z</updated>
     
@@ -60,8 +60,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://rose-upforever.github.io/2022/03/14/hello-world/"/>
-    <id>https://rose-upforever.github.io/2022/03/14/hello-world/</id>
+    <link href="https://github.com/Rose-upForever/Rose-upForever.github.io/2022/03/14/hello-world/"/>
+    <id>https://github.com/Rose-upForever/Rose-upForever.github.io/2022/03/14/hello-world/</id>
     <published>2022-03-14T09:33:30.461Z</published>
     <updated>2022-03-14T09:33:30.461Z</updated>
     
